@@ -1,65 +1,71 @@
+/* Reset margin and padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Basic body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 
+.header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Header title */
+.header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* Header subtitle */
+.header p {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+/* Navbar container */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    background-color: #2d2d2d;
-    border-bottom: 2px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
 }
 
-.logo {
-    color: white;
-    font-size: 1.6rem;
-    font-weight: bold;
+/* Logo styling */
+.logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
 
-.search-bar {
-    position: relative;
-    width: 50%;
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
 }
 
-.search-bar input {
-    width: 100%;
-    padding: 10px 15px 10px 40px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    outline: none;
-    transition: border-color 0.3s;
+.nav-links li {
+  margin-left: 20px;
 }
 
-.search-bar input:focus {
-    border-color: #007bff;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
-.search-bar .search-icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    color: #888;
-    pointer-events: none;
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-}
-
-.profile-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s;
+/* Hover effect for navigation links */
+.nav-links a:hover {
+  background-color: #575757;
+  border-radius: 4px;
 }
